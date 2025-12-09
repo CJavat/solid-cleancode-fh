@@ -37,4 +37,22 @@
     console.log("Crear actor");
     return true;
   }
+
+  // Continuar
+
+  const getPayAmount = ({
+    isDead = false,
+    isSeparated = true,
+    isRetired = false,
+  }): number => {
+    let result: number;
+
+    if (isDead) return 1500;
+
+    if (isSeparated) return 2500;
+
+    if (isRetired) return 3000;
+
+    return 4000;
+  };
 })();
